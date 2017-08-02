@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题蓝 -->
+    <drawable name="ThemeDefault">#3385FF</drawable>
+
+    <!-- 浅蓝 -->
+    <drawable name="LightBlue">#61CDFC</drawable>
+
+    <!-- 图标灰色 -->
+    <drawable name="IconGray">#9E9E9E</drawable>
+
+    <!-- 图标正常颜色 -->
+    <drawable name="IconDefault">#272636</drawable>
+
+    <!-- 边框颜色 -->
+    <drawable name="BorderDefault">#BBBBBB</drawable>
+
+    <!-- 默认文本的颜色 -->
+    <drawable name="TextDefault">#888888</drawable>
+
+    <!-- 黑色文本颜色 -->
+    <drawable name="TextBlack">#FF000000</drawable>
+
+    <!-- 长按选项屏幕变灰的颜色值 -->
+    <drawable name="DarkScreenBg">#51000000</drawable>
+
+    <!-- 白色 -->
+    <drawable name="White">#FFFFFF</drawable>
+
+    <!-- 标题栏的字体默认灰色 -->
+    <drawable name="TitleGray">#CCCCCC</drawable>
+
+    <!-- 浅灰色 -->
+    <drawable name="LightGray">#DDDDDD</drawable>
+
+    <!-- bottom栏背景色 -->
+    <drawable name="BottomBg">#EEEEEE</drawable>
+
+    <!-- SlideSwitch两种状态的颜色 -->
+    <drawable name="SlideSwitchOff">#808080</drawable>
+    <drawable name="SlideSwitchOn">#1AC045</drawable>
+
+    <!-- 弹出框的遮罩层背景颜色 -->
+    <drawable name="DialogMaskBackground">#b2000000</drawable>
+
+    <!-- 红色按钮颜色 -->
+    <drawable name="ButtonRed">#FF5555</drawable>
+    <drawable name="ButtonOrange">#FF5511</drawable>
+
+    <!-- 浅黑色 -->
+    <drawable name="LightBlack">#555555</drawable>
+
+</resources>

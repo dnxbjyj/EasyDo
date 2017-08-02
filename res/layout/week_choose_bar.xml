@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/ThemeDefault"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/week_choose_minus_ib"
+        style="@style/TitleClickStyle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/minus1_20" />
+
+    <TextView
+        android:id="@+id/week_choose_display_tv"
+        style="@style/TitleClickStyle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="2015-02-03 ~ 12"
+        android:textColor="@drawable/White"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/week_choose_plus_ib"
+        style="@style/TitleClickStyle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/plus1_20" />
+
+</LinearLayout>

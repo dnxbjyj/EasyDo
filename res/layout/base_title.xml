@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_title_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ThemeDefault"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/title_base_left_ib"
+            style="@style/TitleClickStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- 自定义功能的Tv -->
+
+        <TextView
+            android:id="@+id/title_base_middle_custom_tv"
+            style="@style/TitleClickStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:textColor="@drawable/White"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <!-- 分割线 -->
+
+        <View
+            android:id="@+id/title_base_divider_v"
+            android:layout_width="2dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/White"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_base_middle_tv"
+            style="@style/TitleClickStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:textColor="@drawable/White"
+            android:textSize="16sp" />
+
+        <!-- 自定义周选择栏 -->
+
+        <LinearLayout
+            android:id="@+id/title_base_expand_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <com.easydo.layout.WeekChooseBarLayout
+                android:id="@+id/week_choose_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.easydo.layout.WeekChooseBarLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/title_base_right_ib"
+            style="@style/TitleClickStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

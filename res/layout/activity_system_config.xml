@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/White"
+    android:orientation="vertical" >
+
+    <com.easydo.layout.BaseTitleLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.easydo.layout.BaseTitleLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TableLayout
+            android:id="@+id/table_tl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:stretchColumns="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/LightGray"
+                android:gravity="center_vertical|left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="日程提醒设置"
+                android:textColor="@drawable/IconDefault"
+                android:textSize="14sp" />
+
+            <TableRow
+                android:id="@+id/scheduel_alarm_voice_tr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|left"
+                    android:text="提醒时响铃"
+                    android:textColor="@drawable/IconDefault"
+                    android:textSize="16sp" />
+
+                <com.easydo.layout.SlideSwitch
+                    android:id="@+id/scheduel_alarm_voice_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="1" >
+                </com.easydo.layout.SlideSwitch>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/BorderDefault" />
+
+            <TableRow
+                android:id="@+id/scheduel_alarm_vibrate_tr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|left"
+                    android:text="提醒时振动"
+                    android:textColor="@drawable/IconDefault"
+                    android:textSize="16sp" />
+
+                <com.easydo.layout.SlideSwitch
+                    android:id="@+id/scheduel_alarm_vibrate_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="1" >
+                </com.easydo.layout.SlideSwitch>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/BorderDefault" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/LightGray"
+                android:gravity="center_vertical|left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="显示设置"
+                android:textColor="@drawable/IconDefault"
+                android:textSize="14sp" />
+
+            <TableRow
+                android:id="@+id/show_schedule_detail_time_tr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|left"
+                    android:text="日程时间轴显示具体时间"
+                    android:textColor="@drawable/IconDefault"
+                    android:textSize="16sp" />
+
+                <com.easydo.layout.SlideSwitch
+                    android:id="@+id/show_schedule_detail_time_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="1" >
+                </com.easydo.layout.SlideSwitch>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/BorderDefault" />
+
+            <TableRow
+                android:id="@+id/show_schedule_colorful_tr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|left"
+                    android:text="日程显示标签颜色"
+                    android:textColor="@drawable/IconDefault"
+                    android:textSize="16sp" />
+
+                <com.easydo.layout.SlideSwitch
+                    android:id="@+id/show_schedule_colorful_switch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="1" >
+                </com.easydo.layout.SlideSwitch>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/BorderDefault" />
+
+            <TableRow
+                android:id="@+id/show_schedule_typeface_tr"
+                style="@style/EasyDoTrStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:text="设置日程字体"
+                    android:textColor="@drawable/IconDefault"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/selected_schedule_typeface_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@drawable/TextBlack"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/BorderDefault" />
+
+            <TableRow
+                android:id="@+id/show_journal_typeface_tr"
+                style="@style/EasyDoTrStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:text="设置日志字体"
+                    android:textColor="@drawable/IconDefault"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/selected_journal_typeface_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@drawable/TextBlack"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/BorderDefault" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/LightGray"
+                android:gravity="center_vertical|left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="数据管理"
+                android:textColor="@drawable/IconDefault"
+                android:textSize="14sp" />
+
+            <TableRow
+                android:id="@+id/local_backup_tr"
+                style="@style/EasyDoTrStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|left"
+                    android:text="本地数据备份管理"
+                    android:textColor="@drawable/IconDefault"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/BorderDefault" />
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

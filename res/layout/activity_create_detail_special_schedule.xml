@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/White"
+    android:orientation="vertical" >
+
+    <com.easydo.layout.BaseTitleLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.easydo.layout.BaseTitleLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableLayout
+            android:id="@+id/table_tl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="2" >
+
+            <!-- 输入特殊日程的标题 -->
+
+            <TableRow
+                android:id="@+id/title_tr"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/title1_32" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="1"
+                    android:text="标题"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/title_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="输入日程的标题"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/dictation_ib"
+                    style="@style/VoiceIbStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/dictation2_64" />
+            </TableRow>
+
+            <View
+                android:layout_height="0.5dp"
+                android:background="@drawable/BorderDefault" />
+
+            <!-- 选择特殊日程的类型（纪念日、生日、倒数日） -->
+
+            <TableRow
+                android:id="@+id/type_tr"
+                style="@style/EasyDoTrStyle" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/type1_32" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="1"
+                    android:text="分类"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/type_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    style="@style/VoiceIbStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/dictation2_64"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <View
+                android:layout_height="0.5dp"
+                android:background="@drawable/BorderDefault" />
+
+            <!-- 选择特殊日程的日期 -->
+
+            <TableRow
+                android:id="@+id/date_tr"
+                style="@style/EasyDoTrStyle" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/date1_32" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="1"
+                    android:text="日期"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/date_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    style="@style/VoiceIbStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/dictation2_64"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <View
+                android:layout_height="0.5dp"
+                android:background="@drawable/BorderDefault" />
+
+            <!-- 添加特殊日程的备注 -->
+
+            <TableRow
+                android:id="@+id/remark_blank_tr"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/remark1_32" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_weight="1"
+                    android:text="备注"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/remark_blank_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/remark_tr"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/remark1_32"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/remark_et"
+                    style="@style/EasyDoEtStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:maxLines="5"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <View
+                android:layout_height="0.5dp"
+                android:background="@drawable/BorderDefault" />
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

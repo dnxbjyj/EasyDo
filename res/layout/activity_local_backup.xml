@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/White"
+    android:orientation="vertical" >
+
+    <com.easydo.layout.BaseTitleLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.easydo.layout.BaseTitleLayout>
+
+    <TextView
+        android:id="@+id/blank_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="请点击下方按钮备份最新数据到SD卡"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/local_backup_files_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/do_local_backup_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/LightGray"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="备份最新数据"
+        android:textSize="20sp" />
+
+</LinearLayout>

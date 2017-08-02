@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/et_pressed" android:state_focused="true"/>
+    <item android:drawable="@drawable/et_normal"/>
+	
+    <!-- 注：et_pressed和et_normal是drawable目录下两张相同大小、填充颜色都为白色但边框颜色不同的圆角矩形的png图片 -->
+    
+</selector>

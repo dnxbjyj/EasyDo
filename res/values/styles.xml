@@ -1,0 +1,67 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">@drawable/TextBlack</item>
+    </style>
+
+    <!-- 全屏style -->
+    <style name="FullScreen" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- EditText的自定义风格 -->
+    <style name="EasyDoEtStyle" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/selector_edittext_bg</item>
+    </style>
+
+    <!-- 标题栏控件点击时的style -->
+    <style name="TitleClickStyle" parent="@android:style/Widget">
+        <item name="android:background">@drawable/selector_title_click_bg</item>
+    </style>
+
+    <!-- TableRow的style -->
+    <style name="EasyDoTrStyle" parent="@android:style/Widget">
+        <item name="android:background">@drawable/selector_tablerow_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!-- 语音听写按钮的风格 -->
+    <style name="VoiceIbStyle" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/selector_voice_imagebutton_bg</item>
+    </style>
+
+    <!-- 语音听写圆形按钮的风格 -->
+    <style name="VoiceBigIbStyle" parent="@android:style/Widget.ImageButton">
+        <item name="android:src">@drawable/selector_voice_big_btn</item>
+    </style>
+
+    <!-- 常用标点符号条的style -->
+    <style name="PunctuationBarStyle" parent="@android:style/Widget.TextView">
+        <item name="android:background">@drawable/selector_punctuation_textview_bg</item>
+    </style>
+    
+    <!-- Alarm弹出窗口的动画效果 -->
+    <style name="MyPopupWindowAnimStyle">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+</resources>

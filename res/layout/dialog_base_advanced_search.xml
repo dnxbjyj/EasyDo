@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/White"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/table_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2" >
+
+        <!-- 是否输入关键词 -->
+
+        <TableRow
+            android:id="@+id/keywords_tr"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="关键词"
+                android:textColor="@drawable/TextDefault"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/no_keywords_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:checked="true"
+                android:text="无"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5" >
+
+                <RadioButton
+                    android:id="@+id/input_keywords_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/input_keywords_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="输入关键词"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/BorderDefault" />
+
+        <TableRow
+            android:id="@+id/date_tr"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="时间段"
+                android:textColor="@drawable/TextDefault"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/no_date_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:checked="true"
+                android:text="不限"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5" >
+
+                <RadioButton
+                    android:id="@+id/choose_date_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/start_date_tv"
+                        style="@style/EasyDoTrStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@drawable/TextDefault"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:text="~"
+                        android:textColor="@drawable/TextDefault"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/end_date_tv"
+                        style="@style/EasyDoTrStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@drawable/TextDefault"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:id="@+id/status_divide_v1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/BorderDefault"
+            android:visibility="gone" />
+
+        <!-- 选择日程的状态 -->
+
+        <TableRow
+            android:id="@+id/status_tr"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="状态"
+                android:textColor="@drawable/TextDefault"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/status_any_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:checked="true"
+                android:text="不限"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/status_not_done_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:checked="false"
+                android:text="未完成"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/status_done_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:checked="false"
+                android:text="已完成"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <View
+            android:id="@+id/status_divide_v2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/BorderDefault"
+            android:visibility="gone" />
+        <!-- 选择日程的标签 -->
+
+        <TableRow
+            android:id="@+id/tag_tr"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="标签"
+                android:textColor="@drawable/TextDefault"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/tag_any_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:checked="true"
+                android:text="不限"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/tag_matters_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="日常杂事"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/tag_work_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="工作"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/tag_interested_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="私事"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/tag_important_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="重要事项"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
